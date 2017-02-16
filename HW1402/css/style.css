@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+.logo{
+    font-size: x-large;
+    padding-right: 45%;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a:hover{
+    border-bottom-style: solid;
+}
+.banner{
+    display: flex;
+    align-content: center;
+    width: 100%;
+    min-height: 100%;
+    background: url(../image/banner.png);
+    -webkit-background-size: cover;
+    color:#fff;
+}
+.banner_sign_up{
+    display: flex;
+    width: 30%;
+    min-height: 20%;
+    margin-left: 60%;
+    -webkit-flex-direction: column;
+    -webkit-align-self: center;
+ }
+.button_sign_up {
+    width: 7.5em;
+    height: 2em;
+    background: url(../image/button.png);
+    }
+.popular{
+    display : flex;
+    -webkit-justify-content: space-around;
+    width: 90%;
+    min-height: 20%;
+    margin: 5%;
+}
+.popular_item{
+    text-align: center;
+    width: 30%;
+}
+.h4p{
+      color: #4169e1;
+  }
+.shop{
+    display: flex;
+}
+.cart{
+    margin: 5% 5% 5% 15%;
+}
+.text{
+     margin: 8% 5% 5% 0%;
+    font-size: smaller;
+}
+.footer_span{
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+    font-size: xx-small;
+
+}
+@media only screen and (max-width: 640px) {
+    .shop{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .banner_sign_up{
+        background-color: darkslategrey;
+        text-align: center;
+    }
+}
