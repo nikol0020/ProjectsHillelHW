@@ -17,7 +17,7 @@ a:hover{
     display: flex;
     align-content: center;
     width: 100%;
-    min-height: 100%;
+    min-height: 45em;
     background: url(../image/banner.png);
     -webkit-background-size: cover;
     color:#fff;
