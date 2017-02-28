@@ -1,0 +1,309 @@
+*{
+    box-sizing: border-box;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #2f4f4f;
+    font-family: Calibri, monospace;
+}
+.items:hover a{
+    color: #2f4f4f;
+    background-color: #fff;
+    font-weight: bold;
+}
+.menu_picture{
+    display: none;
+}
+.lists{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0.5% 3%;
+}
+.items a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.items{
+    margin-left: 3%;
+}
+.logo{
+    margin-left: 5%;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 25em;
+    background-color: aqua;
+    background-image: url(../images/fon_header.png);
+    background-size: cover;
+    font-family: Calibri, monospace;
+    color: #4682B4;
+}
+.header{
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 200;
+}
+.picture{
+    align-self: flex-end;
+    margin-right: 5%;
+    position: relative;
+    top: 0.3em;
+}
+.epigraf{
+    width: 27%;
+}
+.slice{
+    align-self: flex-end;
+    margin: 0 5% 1.5% 0;
+}
+.button{
+    width: 30%;
+    padding: 1.5%;
+    font-weight: lighter;
+    background: #4169E1;
+    color: #ffffff;
+}
+.head_section_our_services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Calibri, monospace;
+    font-size: xx-large;
+    color:#2f4f4f;
+}
+.head_section_line{
+    width: 7em;
+    border: 1px solid #2f4f4f;
+    margin: 0 2%;
+}
+.our_services{
+    display: flex;
+    justify-content: center;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    margin: 2%;
+}
+.head_description{
+    color: #4169E1;
+    font-weight: 100;
+}
+.button_description{
+    width: 40%;
+    padding: 1.5%;
+    font-weight: lighter;
+    background: #4169E1;
+    color: #ffffff;
+}
+.description{
+   text-align: center;
+}
+.head_section_about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Calibri, monospace;
+    font-size: xx-large;
+    color:#2f4f4f;
+    background-color: #d3d3d3;
+}
+.section_about{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    background-color: #d3d3d3;
+    width: 35%;
+    margin: 1%;
+}
+.section_about_article{
+    width: 100%;
+    color: #2f4f4f;
+}
+.head_test{
+    color:  #2f4f4f;
+    font-family: Calibri, monospace;
+    font-weight: 400;
+}
+.section_skills{
+    width: 100%;
+    margin: 4% 0;
+}
+.section_skills_block{
+    margin-bottom: 2%;
+    color: #fff;
+    background: #808080;
+    font-family: Calibri, monospace;
+    font-weight: 200;
+    font-size: medium;
+    overflow: hidden;
+}
+.section_skills_block_line1{
+    padding: 0% 70% 0% 1%;
+    background-color: #4169E1;
+}
+.section_skills_block_line2{
+    padding: 0% 80% 0% 1%;
+    background-color: #4169E1;
+}
+.section_skills_block_line3{
+    padding: 0% 50% 0% 1%;
+    background-color: #4169E1;
+}
+.section_skills_block_line4{
+    padding: 0% 30% 0% 1%;
+    background-color: #4169E1;
+}
+.head_skills{
+    color: #4682B4;
+    font-family: Calibri, monospace;
+    font-weight: 400;
+}
+.map{
+    width: 100%;
+    min-height: 10em;
+    background: url(../images/map.png) no-repeat;
+    background-size: cover;
+    margin-bottom: 3%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 10em;
+}
+.form_items{
+    width: 100%;
+    padding: .7%;
+    font-size: small;
+}
+.section_about_button{
+    width: 20%;
+    height: 2em;
+    background-color: #4682B4;
+    color: #ffffff;
+    position: relative;
+    left: 80%;
+    top: -2em;
+}
+.footer{
+    clear: both;
+    text-align: center;
+    background: #ffffff;
+    padding: 3%;
+    font-size: small;
+}
+.message{
+    width: 100%;
+    padding: .7%;
+    font-size: large;
+}
+.basic {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #d3d3d3;
+}
+@media only screen and (max-width: 770px){
+    .lists {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+        list-style-type: none;
+        background-color: #2f4f4f;
+        color: #ffffff;
+        padding: 0.5% 3%;
+    }
+    .menu {
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu .menu_picture {
+        display: block;
+    }
+    .items {
+        display: none;
+    }
+    .lists:hover .menu_picture {
+        display: none;
+    }
+    .lists:hover .items {
+        display: block;
+        margin: 0 0 0.5em;
+    }
+    .items:hover a {
+        color: #2f4f4f;
+        background-color: #fff;
+        font-weight: bold;
+    }
+    .button {
+        width: 50%;
+    }
+    .button_description {
+        width: 60%;
+    }
+    .section_about_button {
+        width: 30%;
+        height: 2em;
+        background-color: #4682B4;
+        color: #ffffff;
+        position: relative;
+        left: 70%;
+        top: -2em;
+    }
+}
+    @media only screen and (max-width: 500px){
+        .basic, .our_services{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            background-color: #d3d3d3;
+        }
+        .services,.section_about,.form{
+            width: 80%;
+        }
+        .button {
+            width: 70%;
+        }
+        .button_description {
+            width: 40%;
+        }
+        .section_about_button {
+            width: 40%;
+            height: 2em;
+            background-color: #4682B4;
+            color: #ffffff;
+            position: relative;
+            left: 60%;
+            top: -2em;
+        }
+        .head_description{
+            color: #4169E1;
+            font-weight: 100;
+            font-size: small;
+        }
+}
+@media only screen and (max-width: 370px) {
+    .banner{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .banner div{
+        width: 80%;
+    }
+    .picture{
+        align-self: flex-start;
+        padding-left: 2.5%;
+    }
+}
